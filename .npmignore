@@ -11,4 +11,5 @@ tsconfig.json
 
 .tools-versions
 
+jest.config.ts
 **/__tests__/**
