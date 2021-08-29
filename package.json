@@ -10,7 +10,9 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint './src/**/*.{js,ts,tsx}'",
+    "lint-fix": "eslint './src/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "author": "Many-Monkeys",
   "license": "ISC",
@@ -26,7 +28,16 @@
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
     "babel-jest": "^27.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.25.0",
     "jest": "^27.1.0",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",

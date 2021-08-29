@@ -21,5 +21,8 @@ jobs:
           cmd: test # will run `yarn test` command
       - uses: borales/actions-yarn@v2.3.0
         with:
+          cmd: lint # will run `yarn lint` command
+      - uses: borales/actions-yarn@v2.3.0
+        with:
           cmd: publish --access public # will run `yarn publish` command
           auth-token: ${{ secrets.NPM_TOKEN }}
