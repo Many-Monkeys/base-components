@@ -1,9 +1,14 @@
 .editorconfig
 .gitignore
 node_modules
+coverage
 src
 *.tgz
 
 yarn.lock
 
 tsconfig.json
+
+.tools-versions
+
+**/__tests__/**

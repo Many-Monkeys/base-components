@@ -1,7 +1,9 @@
 import React from "react";
 
-const Copyright: React.FC = () => {
-  return (<div>&copy; {new Date().getFullYear()}</div>);
+export type CopyrightFields = {
+  company?: string
+}
+
+export const Copyright: React.FC<CopyrightFields> = ({company}) => {
+  return (<div>&copy; {company ?? 'Many Monkeys'} {new Date().getFullYear()}</div>);
 };
-  
-export default Copyright;
