@@ -1,1 +1,1 @@
-export * from "./components/Copyright"
+export * from './components/Copyright'
